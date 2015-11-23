@@ -1,0 +1,41 @@
+{
+  "name": "dbs-auto-angularjs",
+  "version": "1.0.0",
+  "description": "This package containts a base application for AngularJS.  In includes automaticlly refreshin Jasmine testing, Webpack javacript compliation and defalut Grunt & NPM build tasks.",
+  "main": "app.js",
+  "author": "Bill Bensing <bill.bensing@daugherty.com>",
+  "scripts": {
+    "clean:bundle": "rm -r bundle/*",
+    "clean:dist": "rm -r dist/*",
+    "build:release": "webpack -p",
+    "build:compile": "grunt compile",
+    "dev": "webpack-dev-server -d --inline",
+    "docs": "yuidoc .",
+    "dist": "npm run build:release && npm run build:compile && npm run docs"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.4.7",
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.19.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.1",
+    "jshint": "^2.8.0",
+    "jshint-loader": "^0.8.3",
+    "json-loader": "^0.5.3",
+    "node-libs-browser": "^0.5.3",
+    "node-sass": "^3.3.3",
+    "npm-run-all": "^1.2.11",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^3.0.0",
+    "strip-json-comments": "^1.0.4",
+    "strip-loader": "^0.1.0",
+    "style-loader": "^0.12.4",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2"
+  },
+  "dependencies": {}
+}

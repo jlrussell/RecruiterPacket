@@ -1,0 +1,14 @@
+{
+  "name": "dbs-angluar-template-docs",
+  "description": "AngularJS, Grunt, NPM, YUI Doc, and NPM project framework.",
+  "version": "1.0.0",
+  "url": "http://www.NeedToComplete.com/",
+  "logo": "http://www.daugherty.com/wp-content/themes/brew-master/library/images/favicon-96x96.png",
+  "options": {
+    "linkNatives": "true",
+    "attributesEmit": "true",
+    "selleck": "true",
+    "paths": ["./src"],
+    "outdir": "./docs"
+  }
+}
